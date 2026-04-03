@@ -5,6 +5,7 @@ built for a small landscaping business using Python and AWS.
 
 ## Architecture
 EventBridge -> Lambda (Scheduler) -> S3 -> Email Notification
+
 EventBridge -> Lambda (Payments)  -> S3 -> Email Notification
 
 ## Services Used
@@ -32,3 +33,7 @@ EventBridge -> Lambda (Payments)  -> S3 -> Email Notification
 - src/Payments.py: identifies clients behind on payments
 - src/Notifier.py: handles sending notifications
 - src/emailConfig.py: fetches credentials from Secrets Manager
+
+## **Author**
+
+David Morfin
